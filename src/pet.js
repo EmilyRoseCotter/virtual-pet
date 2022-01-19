@@ -15,7 +15,7 @@ const hungerDecrement = 3; // decreases hunger by 3 when feed() invoked
 
 const errorMsg = 'Your pet is no longer alive :(';
 
-function Pet (name) {
+function Pet(name) {
   this.name = name; 
   this.age = minAge;
   this.hunger = minHunger;
@@ -77,7 +77,7 @@ Pet.prototype.adoptChild = function (child) {
 };
 
 Pet.prototype.haveBaby = function (child) {
-  this.children.push(new Pet (child));
+  this.children.push(new Pet(child));
 };
 
 module.exports = Pet;
